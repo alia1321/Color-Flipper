@@ -1,0 +1,53 @@
+<!-- 
+Goal of Color Flipper: Basically, a button says click me. 
+You click it and it changes the background to a color
+There is a simple mode and a hex mode. 
+BREAKING IT DOWN:
+
+-Bar ontop: With the name of the website 'Color Flipper'.
+-Bar also contains two modes.
+-Hex mode cycles through hex colors
+-simple mode cycles through simiple colors  -> need a list of colors
+- Blacks bar that says background color: <color>
+-Simple button that says click me. 
+        -When button is clicked it switches color. 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+    
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <p>Color Flipper</p>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          </ul>
+        </header>
+      </div>
+    
+
+    
+     <div class="d-flex align-items-center justify-content-center flex-column" id="body">
+        <h1 class="main-heading " >Background Color: </h1>
+        <button class="customize-btn">CLICK ME</button>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

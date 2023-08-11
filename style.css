@@ -1,0 +1,13 @@
+#body{
+    background-color: red;
+    height: 100vh;   
+}
+
+.main-heading{
+    display:block;
+    
+}
+
+.customize-btn{
+    display: static;
+}
