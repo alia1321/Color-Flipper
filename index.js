@@ -8,6 +8,7 @@
  */
 
 
+
 const { 
     randomHexColor, 
     randomHexColorStartWith, 
@@ -20,4 +21,5 @@ const {
 } = require('random-hex-color-generator');
 
 const randomHex= randomHexColor();
-console.log(randomHex);
+
+console.log(randomHex); 
