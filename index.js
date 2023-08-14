@@ -7,8 +7,8 @@
  * 
  */
 
-
-
+const cors = require("cors");
+const express = require("express");
 const { 
     randomHexColor, 
     randomHexColorStartWith, 
@@ -20,6 +20,22 @@ const {
     randomHexColorArrayEndWith,
 } = require('random-hex-color-generator');
 
-const randomHex= randomHexColor();
 
-console.log(randomHex); 
+
+const app = express();
+const port = 4000;
+app.use(cors()); // Use cors middleware
+
+
+app.get('/', (req,res) => {
+    const randomHex= randomHexColor();
+    res.send(randomHex);
+    console.log(randomHex);
+});
+
+app.listen(port, ()=>{
+    console.log("Waiting for phase retrevial");
+});
+
+
+
