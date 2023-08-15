@@ -1,9 +1,5 @@
 /**
- * Hex: When button is pressed. 
- * randomly generate a hex number. 
- * Send it to the div
- * write it out
- * 
+ * This is a backend that will generate a random hex number. 
  * 
  */
 
